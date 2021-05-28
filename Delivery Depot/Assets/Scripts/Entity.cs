@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Entity : PhysicsObject
 {
-    
+    public bool death;
     
     public void Start()
     {
@@ -13,8 +13,22 @@ public class Entity : PhysicsObject
     }
 
     // Update is called once per frame
-    void Update()
+
+    public void Die()
     {
-        
+        death = true;
+    }
+
+    public virtual void Move()
+    {
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag != "Floor")
+        {
+            Die();
+        }
     }
 }

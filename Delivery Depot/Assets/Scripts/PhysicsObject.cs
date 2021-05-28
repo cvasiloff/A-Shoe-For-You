@@ -10,7 +10,6 @@ public class PhysicsObject : MonoBehaviour
     public void Start()
     {
         myRig = this.GetComponent<Rigidbody>();
-        Debug.Log("Hey");
         if (myRig == null)
         {
             throw new System.Exception(this.name + ": Could not find RigidBody");

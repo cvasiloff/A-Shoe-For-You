@@ -17,22 +17,25 @@ public class PlayerController : Entity
     [Header("Don't Set variables")]
     public bool canSpawnPackage = true;
     Camera myCam;
-    private float brakeTimer;
+    public float brakeTimer;
 
     void Start()
     {
         base.Start();
         myCam = Camera.main;
+        brakeTimer = brakeTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerMove();
+        if(!death)
+            this.Move();
+
         MoveCam();
     }
 
-    public void PlayerMove()
+    public override void Move()
     {
         float turn = Input.GetAxisRaw("Horizontal");
         float move = Input.GetAxisRaw("Vertical");
@@ -50,7 +53,7 @@ public class PlayerController : Entity
             if(brakeTimer <= 0)
             {
                 Debug.Log("Brakes Failed!");
-                //Die();
+                Die();
             }
         }
         else
@@ -122,4 +125,8 @@ public class PlayerController : Entity
     {
         myCam.transform.position = new Vector3(this.transform.position.x, myCam.transform.position.y, this.transform.position.z);
     }
+
+    
+
+
 }
