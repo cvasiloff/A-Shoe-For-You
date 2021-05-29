@@ -9,12 +9,15 @@ public class ManageGame : MonoBehaviour
     [Header("Set Variables")]
     public Text score;
     public Text countdown;
+    public GameObject policePrefab;
 
     [Header("Do not Set Variables")]
     public bool isStarted;
     private int scoreVar = 0;
     public bool canAdd = true;
     private PlayerController player;
+    public GameObject[] policeSpawns;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,12 @@ public class ManageGame : MonoBehaviour
         {
             StartCoroutine(AliveScore());
         }
+    }
+
+    public void CallPolice()
+    {
+        GameObject cop = GameObject.Instantiate(policePrefab, Vector3.one, Quaternion.identity);
+        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAA");
     }
 
     public IEnumerator AliveScore()

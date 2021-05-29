@@ -8,7 +8,7 @@ public class Police : Entity
     [Header("Do Not Set In Inspector")]
     PlayerController player;
     NavMeshAgent myCop;
-    ManageGame gm;
+    bool escape;
 
     // Start is called before the first frame update
     void Start()
@@ -16,16 +16,39 @@ public class Police : Entity
         base.Start();
         myCop = this.GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerController>();
-        gm = FindObjectOfType<ManageGame>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(gm.isStarted && !death)
+
+            Move();
+        
+        if(death && !escape)
+        {
+            StartCoroutine(RemovePolice());
+            escape = true;
+        }
+    }
+
+    IEnumerator RemovePolice()
+    {
+        gm.AddScore(100);
+        gm.CallPolice();
+        this.transform.GetChild(0).gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        Destroy(this.transform.GetChild(0).gameObject);
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
+    }
+
+    public override void Move()
+    {
+        if (gm.isStarted && !death)
             myCop.destination = player.transform.position;
 
-        if(death)
+        if (death)
         {
             myCop.destination = this.transform.position;
         }

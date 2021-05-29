@@ -10,6 +10,7 @@ public class Entity : PhysicsObject
     {
         base.Start();
         
+        
     }
 
     // Update is called once per frame
@@ -29,7 +30,8 @@ public class Entity : PhysicsObject
     {
         if(collision.gameObject.tag != "Floor")
         {
-            Die();
+            if(collision.gameObject.tag != this.gameObject.tag)
+                Die();
         }
     }
 }

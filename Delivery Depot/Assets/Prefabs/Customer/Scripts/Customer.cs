@@ -25,9 +25,11 @@ public class Customer : Entity
 
     IEnumerator RemoveCustomer()
     {
+        
         yield return new WaitForSeconds(1);
         Destroy(this.transform.GetChild(0).gameObject);
         yield return new WaitForSeconds(1);
+        gm.CallPolice();
         Destroy(this.gameObject);
     }
 }

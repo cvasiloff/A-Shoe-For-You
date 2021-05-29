@@ -13,7 +13,7 @@ public class PlayerController : Entity
     public float resetPackageTime;
     public int brakeTime;
 
-    ManageGame gm;
+
     
 
     [Header("Don't Set variables")]
@@ -26,7 +26,7 @@ public class PlayerController : Entity
         base.Start();
         myCam = Camera.main;
         brakeTimer = brakeTime;
-        gm = FindObjectOfType<ManageGame>();
+
     }
 
     // Update is called once per frame
