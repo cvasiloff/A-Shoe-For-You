@@ -9,6 +9,7 @@ public class ManageGame : MonoBehaviour
     [Header("Set Variables")]
     public Text score;
     public Text countdown;
+    public Image progressBar;
     public GameObject policePrefab;
 
     [Header("Do not Set Variables")]

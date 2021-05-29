@@ -20,6 +20,7 @@ public class PlayerController : Entity
     public bool canSpawnPackage = true;
     Camera myCam;
     public float brakeTimer;
+    public bool finishBar;
 
     void Start()
     {
@@ -39,6 +40,9 @@ public class PlayerController : Entity
             gm.canAdd = false;
 
         MoveCam();
+
+        if (finishBar)
+            ToggleProgressBar();
     }
 
     public override void Move()
@@ -73,8 +77,10 @@ public class PlayerController : Entity
 
         if(Input.GetAxisRaw("Fire1") != 0)
         {
+            
             if(canSpawnPackage)
             {
+                
                 canSpawnPackage = false;
                 SpawnPackage();
             }
@@ -83,7 +89,6 @@ public class PlayerController : Entity
         //Constantly moving forward
         myRig.velocity = this.transform.forward * moveSpeed * slowTime;
     }
-
     public void SpawnPackage()
     {
 
@@ -122,10 +127,21 @@ public class PlayerController : Entity
         throw new System.Exception("Could not determine raycast!");
     }
 
+    void ToggleProgressBar()
+    {
+        gm.progressBar.fillAmount -= 1 / resetPackageTime * Time.deltaTime;
+    }
     public IEnumerator ResetPackage()
     {
+
+        finishBar = true;
+        gm.progressBar.gameObject.SetActive(true);
         yield return new WaitForSeconds(resetPackageTime);
         canSpawnPackage = true;
+        finishBar = false;
+        gm.progressBar.gameObject.SetActive(false);
+        gm.progressBar.fillAmount = 1;
+
     }
 
     public void MoveCam()
