@@ -49,7 +49,7 @@ public class Package : PhysicsObject
 
     public IEnumerator DespawnPackage()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(3);
         Destroy(this.gameObject);
     }
     

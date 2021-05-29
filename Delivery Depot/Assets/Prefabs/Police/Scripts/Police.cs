@@ -22,8 +22,7 @@ public class Police : Entity
     // Update is called once per frame
     void Update()
     {
-
-            Move();
+        Move();
         
         if(death && !escape)
         {
@@ -48,7 +47,7 @@ public class Police : Entity
         if (gm.isStarted && !death)
             myCop.destination = player.transform.position;
 
-        if (death)
+        if (death || player.death)
         {
             myCop.destination = this.transform.position;
         }

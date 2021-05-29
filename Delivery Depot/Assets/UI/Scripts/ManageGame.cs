@@ -24,21 +24,30 @@ public class ManageGame : MonoBehaviour
     {
         StartCoroutine(BeginCountdown());
         player = FindObjectOfType<PlayerController>();
+        policeSpawns = GameObject.FindGameObjectsWithTag("Spawn");
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if(isStarted && canAdd && !player.death)
         {
+            if (scoreVar % 12 == 0 && scoreVar != 0)
+            {
+                CallPolice();
+            }
+
             StartCoroutine(AliveScore());
         }
     }
 
     public void CallPolice()
     {
-        GameObject cop = GameObject.Instantiate(policePrefab, Vector3.one, Quaternion.identity);
-        Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAA");
+        if(!player.death)
+        {
+            GameObject cop = GameObject.Instantiate(policePrefab, policeSpawns[Random.Range(0, policeSpawns.Length)].transform.position, Quaternion.identity);
+        }
     }
 
     public IEnumerator AliveScore()
