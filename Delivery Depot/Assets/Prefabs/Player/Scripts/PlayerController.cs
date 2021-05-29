@@ -177,6 +177,7 @@ public class PlayerController : Entity
     public IEnumerator EndGame()
     {
         //Incase of pause and death at the EXACT same time :)
+        gm.score.gameObject.SetActive(false);
         gm.pausePanel.SetActive(false);
         Time.timeScale = 1;
 
