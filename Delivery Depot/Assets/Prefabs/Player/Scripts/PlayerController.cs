@@ -41,15 +41,21 @@ public class PlayerController : Entity
     {
         if(!death && gm.isStarted)
             this.Move();
-
         
-        if(death && !tallyScore)
+        else if(death && !tallyScore)
         {
             tallyScore = true;
             StartCoroutine(EndGame());
             gm.canAdd = false;
-            myRig.velocity = new Vector3(0, myRig.velocity.y, 0);
+            
         }
+
+        else if(death)
+        {
+            myRig.velocity = new Vector3(0, myRig.velocity.y, 0);
+            myRig.angularVelocity = Vector3.zero;
+        }
+
 
         MoveCam();
 

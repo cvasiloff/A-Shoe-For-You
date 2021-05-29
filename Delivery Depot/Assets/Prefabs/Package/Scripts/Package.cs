@@ -10,7 +10,7 @@ public class Package : PhysicsObject
     void Start()
     {
         base.Start();
-        StartCoroutine(DespawnPackage());
+        StartCoroutine(DespawnPackage(3));
         
 
         
@@ -47,10 +47,18 @@ public class Package : PhysicsObject
         
     }
 
-    public IEnumerator DespawnPackage()
+    public IEnumerator DespawnPackage(int time)
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(time);
         Destroy(this.gameObject);
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.GetComponent<Entity>() != null)
+        {
+            StartCoroutine(DespawnPackage(1));
+        }
+    }
+
 }
