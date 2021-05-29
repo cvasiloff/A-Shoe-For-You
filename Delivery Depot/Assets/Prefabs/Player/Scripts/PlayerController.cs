@@ -20,7 +20,11 @@ public class PlayerController : Entity
     public bool canSpawnPackage = true;
     Camera myCam;
     public float brakeTimer;
+
+    public float progress;
+
     public bool finishBar;
+    public bool brakeBar;
 
     void Start()
     {
@@ -37,9 +41,16 @@ public class PlayerController : Entity
             this.Move();
 
         if (death)
+        {
             gm.canAdd = false;
+            myRig.velocity = new Vector3(0, myRig.velocity.y, 0);
+        }
+            
 
         MoveCam();
+
+        if (brakeBar)
+            ToggleBrakeBar();
 
         if (finishBar)
             ToggleProgressBar();
@@ -54,13 +65,21 @@ public class PlayerController : Entity
         {
             myRig.angularVelocity = new Vector3(0, turn, 0).normalized * turnSpeed;
         }
+        else
+        {
+            myRig.angularVelocity = Vector3.zero;
+        }
 
-        if(Input.GetAxisRaw("Fire2") != 0)
+        if(Input.GetAxisRaw("Fire2") != 0 && gm.isPaused)
         {
             slowTime = 0.5f;
             brakeTimer -= Time.deltaTime * 1.5f;
 
-            if(brakeTimer <= 0)
+            gm.brakeBar.fillAmount += 1.0f / (brakeTime) * Time.deltaTime*1.5f;
+
+            
+
+            if (brakeTimer <= 0)
             {
                 Debug.Log("Brakes Failed!");
                 Die();
@@ -70,12 +89,13 @@ public class PlayerController : Entity
         {
             if(brakeTimer < brakeTime)
             {
+                gm.brakeBar.fillAmount -= 1.0f / (brakeTime) * Time.deltaTime;
                 brakeTimer += Time.deltaTime;
             }
             slowTime = 1;
         }
 
-        if(Input.GetAxisRaw("Fire1") != 0)
+        if(Input.GetAxisRaw("Fire1") != 0 && gm.isPaused)
         {
             
             if(canSpawnPackage)
@@ -131,6 +151,12 @@ public class PlayerController : Entity
     {
         gm.progressBar.fillAmount -= 1 / resetPackageTime * Time.deltaTime;
     }
+
+    void ToggleBrakeBar()
+    {
+        gm.brakeBar.fillAmount += 1 / resetPackageTime * Time.deltaTime;
+    }
+
     public IEnumerator ResetPackage()
     {
 

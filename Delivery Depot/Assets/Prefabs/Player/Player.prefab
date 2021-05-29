@@ -91,7 +91,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6864178316468783373}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 55c508acfaacfee4e9c3ead81be7accb, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -125,11 +125,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c833b7860e606ff498972da5c1bfbbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gm: {fileID: 0}
   death: 0
   turnSpeed: 5
-  moveSpeed: 10
+  moveSpeed: 15
   PackagePrefab: {fileID: 948440314655997367, guid: 780ba8a1cb0349343a643408b2c4508a, type: 3}
-  resetPackageTime: 3
+  resetPackageTime: 2
   brakeTime: 5
   canSpawnPackage: 1
   brakeTimer: 0
+  finishBar: 0

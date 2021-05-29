@@ -10,12 +10,15 @@ public class ManageGame : MonoBehaviour
     public Text score;
     public Text countdown;
     public Image progressBar;
+    public Image brakeBar;
+    public GameObject pausePanel;
     public GameObject policePrefab;
 
     [Header("Do not Set Variables")]
     public bool isStarted;
     private int scoreVar = 0;
     public bool canAdd = true;
+    public bool isPaused;
     private PlayerController player;
     public GameObject[] policeSpawns;
     
@@ -41,6 +44,33 @@ public class ManageGame : MonoBehaviour
 
             StartCoroutine(AliveScore());
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseGame();
+
+        }
+    }
+
+
+    public void PauseGame()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            pausePanel.gameObject.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            pausePanel.gameObject.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     public void CallPolice()
