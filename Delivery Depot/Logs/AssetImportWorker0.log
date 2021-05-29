@@ -1186,3 +1186,247 @@ Received Import Request.
 Start importing Assets/Unsorted Models/policeCar_model.fbx using Guid(d4079d592481a5643911368fffd0d4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3609ffc2a2a4ee102ecf38115a91de') in 0.012819 seconds
   Import took 0.015110 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 128.275294 seconds.
+  path: Assets/Prefabs/Police/Police.prefab
+  artifactKey: Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/Police.prefab using Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67cadec0ec446f297b733bbb92302701') in 0.020404 seconds
+  Import took 0.022978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.711887 seconds.
+  path: Assets/Prefabs/Police/car_Group_012.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/car_Group_012.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768c908ae8834b42955976a1ad776a72') in 0.015438 seconds
+  Import took 0.017681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008512 seconds.
+  path: Assets/Prefabs/Police/car_Group_012.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/car_Group_012.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '768c908ae8834b42955976a1ad776a72') in 0.010002 seconds
+  Import took 0.012403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.143483 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb252de8f0d76580b00f94843369ca4') in 0.011493 seconds
+  Import took 0.014016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004505 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb252de8f0d76580b00f94843369ca4') in 0.009422 seconds
+  Import took 0.011638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.228860 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c0cf65cc8516b41ab7406cb1968f1a') in 0.010185 seconds
+  Import took 0.012502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005662 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c0cf65cc8516b41ab7406cb1968f1a') in 0.009535 seconds
+  Import took 0.011937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.233730 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da8621ae5191560b604528ce910545e0') in 0.008024 seconds
+  Import took 0.010624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015674 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da8621ae5191560b604528ce910545e0') in 0.008738 seconds
+  Import took 0.011300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.338889 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c433e3f1699fd52b64417924fc41aa') in 0.009782 seconds
+  Import took 0.012023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012418 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c433e3f1699fd52b64417924fc41aa') in 0.010440 seconds
+  Import took 0.012649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.147136 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3849f3d99814d2f1e13272f3c558c41c') in 0.007748 seconds
+  Import took 0.009880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015090 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3849f3d99814d2f1e13272f3c558c41c') in 0.008769 seconds
+  Import took 0.011107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.637794 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff867a3a7f934ba6dd10ea96a636f55') in 0.011343 seconds
+  Import took 0.013788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012420 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff867a3a7f934ba6dd10ea96a636f55') in 0.009572 seconds
+  Import took 0.012065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.352900 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4366a0c90fbb3932b825dba999a2c227') in 0.009648 seconds
+  Import took 0.011783 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011809 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4366a0c90fbb3932b825dba999a2c227') in 0.009536 seconds
+  Import took 0.011859 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002960 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.778 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.3 MB.
+System memory in use after: 69.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2022.
+Total: 1.637800 ms (FindLiveObjects: 0.151600 ms CreateObjectMapping: 0.032600 ms MarkObjects: 1.404200 ms  DeleteObjects: 0.048100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 199.525666 seconds.
+  path: Assets/Prefabs/Police/PoliceCar.prefab
+  artifactKey: Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/PoliceCar.prefab using Guid(ca81dccfea2296042b9d659412a70426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '101fe73048d7d359eaf036f196177938') in 0.045952 seconds
+  Import took 0.048413 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003019 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.744 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2026.
+Total: 2.346300 ms (FindLiveObjects: 0.184200 ms CreateObjectMapping: 0.033600 ms MarkObjects: 2.076100 ms  DeleteObjects: 0.051400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002889 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.747 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2029.
+Total: 1.975500 ms (FindLiveObjects: 0.152400 ms CreateObjectMapping: 0.033100 ms MarkObjects: 1.740000 ms  DeleteObjects: 0.048600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003043 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.745 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2032.
+Total: 1.856000 ms (FindLiveObjects: 0.176700 ms CreateObjectMapping: 0.032200 ms MarkObjects: 1.599500 ms  DeleteObjects: 0.046500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002907 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.736 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1390 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2035.
+Total: 1.540200 ms (FindLiveObjects: 0.133900 ms CreateObjectMapping: 0.031900 ms MarkObjects: 1.328600 ms  DeleteObjects: 0.044900 ms)
+
