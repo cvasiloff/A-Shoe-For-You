@@ -70,7 +70,7 @@ public class PlayerController : Entity
             myRig.angularVelocity = Vector3.zero;
         }
 
-        if(Input.GetAxisRaw("Fire2") != 0 && gm.isPaused)
+        if(Input.GetAxisRaw("Fire2") != 0 && !gm.isPaused)
         {
             slowTime = 0.5f;
             brakeTimer -= Time.deltaTime * 1.5f;
@@ -95,7 +95,7 @@ public class PlayerController : Entity
             slowTime = 1;
         }
 
-        if(Input.GetAxisRaw("Fire1") != 0 && gm.isPaused)
+        if(Input.GetAxisRaw("Fire1") != 0 && !gm.isPaused)
         {
             
             if(canSpawnPackage)
