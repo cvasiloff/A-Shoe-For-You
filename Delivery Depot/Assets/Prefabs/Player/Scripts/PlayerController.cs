@@ -22,6 +22,8 @@ public class PlayerController : Entity
     public float brakeTimer;
 
     public float progress;
+    private bool tallyScore;
+
 
     public bool finishBar;
     public bool brakeBar;
@@ -40,12 +42,14 @@ public class PlayerController : Entity
         if(!death && gm.isStarted)
             this.Move();
 
-        if (death)
+        
+        if(death && !tallyScore)
         {
+            tallyScore = true;
+            StartCoroutine(EndGame());
             gm.canAdd = false;
             myRig.velocity = new Vector3(0, myRig.velocity.y, 0);
         }
-            
 
         MoveCam();
 
@@ -168,6 +172,17 @@ public class PlayerController : Entity
         gm.progressBar.gameObject.SetActive(false);
         gm.progressBar.fillAmount = 1;
 
+    }
+
+    public IEnumerator EndGame()
+    {
+        //Incase of pause and death at the EXACT same time :)
+        gm.pausePanel.SetActive(false);
+        Time.timeScale = 1;
+
+        yield return new WaitForSeconds(1.4f);
+        gm.finalScore.text = "Final Score: " + gm.scoreVar.ToString();
+        gm.endPanel.SetActive(true);
     }
 
     public void MoveCam()

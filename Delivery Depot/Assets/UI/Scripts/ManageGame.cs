@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ManageGame : MonoBehaviour
 {
     
     [Header("Set Variables")]
     public Text score;
+    public Text finalScore;
     public Text countdown;
     public Image progressBar;
     public Image brakeBar;
     public GameObject pausePanel;
+    public GameObject endPanel;
     public GameObject policePrefab;
 
     [Header("Do not Set Variables")]
     public bool isStarted;
-    private int scoreVar = 0;
+    public int scoreVar = 0;
     public bool canAdd = true;
     public bool isPaused;
     private PlayerController player;
@@ -47,12 +50,19 @@ public class ManageGame : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            PauseGame();
+            if(!player.death)
+            {
+                PauseGame();
+            }
+            
 
         }
     }
 
-
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
     public void PauseGame()
     {
         isPaused = !isPaused;
