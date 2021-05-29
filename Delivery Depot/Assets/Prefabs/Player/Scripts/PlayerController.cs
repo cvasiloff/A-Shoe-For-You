@@ -12,6 +12,8 @@ public class PlayerController : Entity
     public GameObject PackagePrefab;
     public float resetPackageTime;
     public int brakeTime;
+
+    ManageGame gm;
     
 
     [Header("Don't Set variables")]
@@ -24,13 +26,17 @@ public class PlayerController : Entity
         base.Start();
         myCam = Camera.main;
         brakeTimer = brakeTime;
+        gm = FindObjectOfType<ManageGame>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!death)
+        if(!death && gm.isStarted)
             this.Move();
+
+        if (death)
+            gm.canAdd = false;
 
         MoveCam();
     }
@@ -84,7 +90,8 @@ public class PlayerController : Entity
         Vector3 mousePos = GetMouseLoc();
 
         //GameObject package = GameObject.Instantiate(PackagePrefab, new Vector3(mousePos.x, 1, mousePos.z), this.transform.rotation);
-        GameObject package = GameObject.Instantiate(PackagePrefab, new Vector3(transform.position.x, 2, transform.position.z), this.transform.rotation);
+        GameObject package = GameObject.Instantiate(PackagePrefab, new Vector3(transform.position.x, 1, transform.position.z), this.transform.rotation);
+        Physics.IgnoreCollision(package.GetComponent<Collider>(), this.GetComponent<Collider>());
 
         //Throw package towards mouse, and adjust with player velocity
         package.GetComponent<Rigidbody>().velocity = (new Vector3(mousePos.x, 2, mousePos.z) -new Vector3(this.transform.position.x, 2, this.transform.position.z) ).normalized

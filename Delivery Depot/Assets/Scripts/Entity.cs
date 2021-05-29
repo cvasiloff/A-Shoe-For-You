@@ -17,6 +17,7 @@ public class Entity : PhysicsObject
     public void Die()
     {
         death = true;
+        Debug.Log(this.name + " has died");
     }
 
     public virtual void Move()
