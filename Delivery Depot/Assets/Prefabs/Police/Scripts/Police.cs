@@ -52,6 +52,7 @@ public class Police : Entity
 
         else if(death)
         {
+            
             tempFire.transform.position = this.transform.position;
         }
     }
@@ -82,6 +83,7 @@ public class Police : Entity
         if (death || player.death)
         {
             myCop.destination = this.transform.position;
+            myCop.isStopped = true;
         }
     }
 }
