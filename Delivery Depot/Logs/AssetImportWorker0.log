@@ -2478,3 +2478,287 @@ System memory in use after: 69.9 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2112.
 Total: 1.609600 ms (FindLiveObjects: 0.150100 ms CreateObjectMapping: 0.032300 ms MarkObjects: 1.378200 ms  DeleteObjects: 0.048100 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 2393.131310 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd232de649abb87c810d7b36e30780e28') in 0.068286 seconds
+  Import took 0.070739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 495.344284 seconds.
+  path: Assets/Unsorted Models/fence 4.fbx
+  artifactKey: Guid(78529c2a2d3e36540aecaaa670eac688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/fence 4.fbx using Guid(78529c2a2d3e36540aecaaa670eac688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1748b32c97aecabd80915a116f159708') in 0.026963 seconds
+  Import took 0.029313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006424 seconds.
+  path: Assets/Unsorted Models/fence 4.fbx
+  artifactKey: Guid(78529c2a2d3e36540aecaaa670eac688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/fence 4.fbx using Guid(78529c2a2d3e36540aecaaa670eac688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1748b32c97aecabd80915a116f159708') in 0.010851 seconds
+  Import took 0.013000 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003159 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.748 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1392 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.8 MB.
+System memory in use after: 69.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2116.
+Total: 1.713400 ms (FindLiveObjects: 0.159400 ms CreateObjectMapping: 0.031400 ms MarkObjects: 1.454600 ms  DeleteObjects: 0.067200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1124.584854 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf73ad6e02feda8c965203f54037255') in 0.053121 seconds
+  Import took 0.055703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.240273 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498963d92ba293e6010d02c2efdc0158') in 0.010316 seconds
+  Import took 0.012838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.404066 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f7368b852cf8c966d293db5dcd33f1') in 0.010322 seconds
+  Import took 0.012679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.222117 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c663182d0bd55e05021086c4b3969ef1') in 0.007994 seconds
+  Import took 0.010191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.996460 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ecaad1a96b3c384c424c09312dedc17') in 0.012201 seconds
+  Import took 0.014604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.801959 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e1820cc55fe266063a5941cb3b7758') in 0.011118 seconds
+  Import took 0.013438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.380058 seconds.
+  path: Assets/Prefabs/Police Station/Materials
+  artifactKey: Guid(6a1c0cb118c2b3f489c747e5d8296aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/Materials using Guid(6a1c0cb118c2b3f489c747e5d8296aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab20927d5074fcb9f10614cde459ad11') in 0.005338 seconds
+  Import took 0.007395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.234911 seconds.
+  path: Assets/Prefabs/Police Station/Materials/Black.mat
+  artifactKey: Guid(5977a5c65208832478379e27f602014c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/Materials/Black.mat using Guid(5977a5c65208832478379e27f602014c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72dd7bbd01ccea051f477c5dd1cc7a87') in 0.018997 seconds
+  Import took 0.021414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.869325 seconds.
+  path: Assets/Prefabs/Police Station/Materials/Black.mat
+  artifactKey: Guid(5977a5c65208832478379e27f602014c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/Materials/Black.mat using Guid(5977a5c65208832478379e27f602014c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67485f393610c1c86546dfc046e3032') in 0.010825 seconds
+  Import took 0.013093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.182582 seconds.
+  path: Assets/Prefabs/Police Station/POLICESTATION.prefab
+  artifactKey: Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police Station/POLICESTATION.prefab using Guid(aac49b87999ac0040a1d0c48d017d1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e836fd7b39bc77cda0e77b150f70f1e6') in 0.010652 seconds
+  Import took 0.013029 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003108 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.766 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1392 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.8 MB.
+System memory in use after: 69.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2120.
+Total: 1.631700 ms (FindLiveObjects: 0.148000 ms CreateObjectMapping: 0.032300 ms MarkObjects: 1.401800 ms  DeleteObjects: 0.048700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.670085 seconds.
+  path: Assets/Prefabs/Player/Player.prefab
+  artifactKey: Guid(da4b4dd8d077abf4f978677b3ada6f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player.prefab using Guid(da4b4dd8d077abf4f978677b3ada6f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9deda9d0ead51fd463514b6d9e076548') in 0.050453 seconds
+  Import took 0.052827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 696.456692 seconds.
+  path: Assets/Unsorted Models/Park Decor
+  artifactKey: Guid(6f99dd0b93b8f514080207d664424d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor using Guid(6f99dd0b93b8f514080207d664424d35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0563248fe00e271066392862037dc978') in 0.006522 seconds
+  Import took 0.008760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.441989 seconds.
+  path: Assets/Unsorted Models/Park Decor/Fount.fbx
+  artifactKey: Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Fount.fbx using Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6676a6a44244137134d48bbba864b46') in 0.038488 seconds
+  Import took 0.040724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.523126 seconds.
+  path: Assets/Unsorted Models/Park Decor/Fount.fbx
+  artifactKey: Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Fount.fbx using Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed40372106b7663cd418c8b9b27fa156') in 0.015831 seconds
+  Import took 0.018340 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007497 seconds.
+  path: Assets/Unsorted Models/Park Decor/Fount.fbx
+  artifactKey: Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Fount.fbx using Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed40372106b7663cd418c8b9b27fa156') in 0.014422 seconds
+  Import took 0.016655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.905514 seconds.
+  path: Assets/Unsorted Models/Park Decor/Fount.fbx
+  artifactKey: Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Fount.fbx using Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddef15ea222cac75584a98ec26243f69') in 0.016849 seconds
+  Import took 0.019357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007410 seconds.
+  path: Assets/Unsorted Models/Park Decor/Fount.fbx
+  artifactKey: Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Fount.fbx using Guid(496ca850ccf1a38438240ae8971bd6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddef15ea222cac75584a98ec26243f69') in 0.016121 seconds
+  Import took 0.018845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.183682 seconds.
+  path: Assets/Unsorted Models/Park Decor/Busstop.fbx
+  artifactKey: Guid(2d42d9520051d9443bd9b48a75d0a858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Busstop.fbx using Guid(2d42d9520051d9443bd9b48a75d0a858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a70799cb1eafcae30a525a32e8c57e') in 0.015827 seconds
+  Import took 0.017943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 269.629232 seconds.
+  path: Assets/Materials/DarkGray.mat
+  artifactKey: Guid(537b5faf803f67041b0692c844fba67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/DarkGray.mat using Guid(537b5faf803f67041b0692c844fba67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdd053fc4a56f42b75ee8ab054ae1bda') in 0.010967 seconds
+  Import took 0.013378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Materials/Yellow.mat
+  artifactKey: Guid(2056ec32fe076684db11e389b88b0e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Yellow.mat using Guid(2056ec32fe076684db11e389b88b0e1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322ff7fd8bc74525c8fd3eaed5651153') in 0.010085 seconds
+  Import took 0.011977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.029457 seconds.
+  path: Assets/Materials/Brown.mat
+  artifactKey: Guid(3b0ee04b9569791438fd5a47f7c3bc24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Brown.mat using Guid(3b0ee04b9569791438fd5a47f7c3bc24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd693141c43509be1f53b57f253668e8e') in 0.010541 seconds
+  Import took 0.012892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 113.385891 seconds.
+  path: Assets/Unsorted Models/Park Decor/Outsidechair.fbx
+  artifactKey: Guid(07cbd94ceb5343a4ebff54606ddbeaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unsorted Models/Park Decor/Outsidechair.fbx using Guid(07cbd94ceb5343a4ebff54606ddbeaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c40b76b1c28f07016a8646bd3e28275') in 0.016702 seconds
+  Import took 0.018871 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.762 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1392 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.8 MB.
+System memory in use after: 69.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2124.
+Total: 1.761200 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.036100 ms MarkObjects: 1.452800 ms  DeleteObjects: 0.051100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 501.885009 seconds.
+  path: Assets/Prefabs/Police/Police.prefab
+  artifactKey: Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/Police.prefab using Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225fbf35330035422fa1683fcdd23f68') in 0.055840 seconds
+  Import took 0.058194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.867864 seconds.
+  path: Assets/Prefabs/Police/Police.prefab
+  artifactKey: Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/Police.prefab using Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36cdeb7b2eafa65f109d1a21ff0cc7c') in 0.010372 seconds
+  Import took 0.013164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.861866 seconds.
+  path: Assets/Prefabs/Police/Police.prefab
+  artifactKey: Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Police/Police.prefab using Guid(b708466d8b8d8c74d90988826a528ec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '564b8daf44d4b4f11090346272917d79') in 0.011817 seconds
+  Import took 0.014507 seconds .
+
