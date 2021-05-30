@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PhoneBooth : MonoBehaviour
 {
+    [Header ("Set In Inspector")]
     public GameObject CustomerPrefab;
     public bool canSpawn = true;
+    private PlayerController player;
     // Start is called before the first frame update
 
     void Start()
     {
+        player = FindObjectOfType<PlayerController>();
         StartCoroutine(SpawnCooldown());
     }
 
@@ -24,7 +27,8 @@ public class PhoneBooth : MonoBehaviour
         yield return new WaitForSeconds(5);
         Debug.Log("Spawning Customer");
         SpawnCustomer();
-        StartCoroutine(SpawnCooldown());
+        if(!player.death)
+            StartCoroutine(SpawnCooldown());
     }
 
     public void SpawnCustomer()
