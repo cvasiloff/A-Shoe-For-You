@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Entity : PhysicsObject
 {
+    [Header("Entity Variables")]
+    
     public bool death;
     
     new public void Start()

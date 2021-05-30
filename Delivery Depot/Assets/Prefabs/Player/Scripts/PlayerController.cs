@@ -12,9 +12,11 @@ public class PlayerController : Entity
     public GameObject PackagePrefab;
     public float resetPackageTime;
     public int brakeTime;
-
-
+    public ParticleSystem fire;
     
+
+
+
 
     [Header("Don't Set variables")]
     public bool canSpawnPackage = true;
@@ -27,6 +29,7 @@ public class PlayerController : Entity
 
     public bool finishBar;
     public bool brakeBar;
+    ParticleSystem tempFire;
 
     new void Start()
     {
@@ -44,6 +47,7 @@ public class PlayerController : Entity
         
         else if(death && !tallyScore)
         {
+            tempFire = Instantiate(fire, this.transform.position + new Vector3(0,.5f,0), Quaternion.Euler(this.transform.eulerAngles + new Vector3(-90,0,0)));
             tallyScore = true;
             StartCoroutine(EndGame());
             gm.canAdd = false;
@@ -54,7 +58,9 @@ public class PlayerController : Entity
         {
             myRig.velocity = new Vector3(0, myRig.velocity.y, 0);
             myRig.angularVelocity = Vector3.zero;
+            tempFire.transform.position = this.transform.position;
         }
+
 
 
         MoveCam();
@@ -87,7 +93,9 @@ public class PlayerController : Entity
 
             gm.brakeBar.fillAmount += 1.0f / (brakeTime) * Time.deltaTime*1.5f;
 
-            
+            this.transform.GetChild(1).gameObject.SetActive(true);
+            this.transform.GetChild(2).gameObject.SetActive(true);
+
 
             if (brakeTimer <= 0)
             {
@@ -99,6 +107,8 @@ public class PlayerController : Entity
         {
             if(brakeTimer < brakeTime)
             {
+                this.transform.GetChild(1).gameObject.SetActive(false);
+                this.transform.GetChild(2).gameObject.SetActive(false);
                 gm.brakeBar.fillAmount -= 1.0f / (brakeTime) * Time.deltaTime;
                 brakeTimer += Time.deltaTime;
             }

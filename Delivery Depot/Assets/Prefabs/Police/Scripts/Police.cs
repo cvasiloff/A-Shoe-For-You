@@ -5,11 +5,15 @@ using UnityEngine.AI;
 
 public class Police : Entity
 {
+    [Header("Set In Inspector")]
+    public ParticleSystem fire;
+
     [Header("Do Not Set In Inspector")]
     PlayerController player;
     NavMeshAgent myCop;
     bool escape;
     bool updateChase = true;
+    ParticleSystem tempFire;
 
     // Start is called before the first frame update
     new void Start()
@@ -41,8 +45,14 @@ public class Police : Entity
         
         if(death && !escape)
         {
+            tempFire = Instantiate(fire, this.transform.position + new Vector3(0, .5f, 0), Quaternion.Euler(this.transform.eulerAngles + new Vector3(-90, 0, 0)));
             StartCoroutine(RemovePolice());
             escape = true;
+        }
+
+        else if(death)
+        {
+            tempFire.transform.position = this.transform.position;
         }
     }
 
@@ -59,7 +69,8 @@ public class Police : Entity
         this.transform.GetChild(0).gameObject.SetActive(true);
         yield return new WaitForSeconds(1);
         Destroy(this.transform.GetChild(0).gameObject);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(5);
+        Destroy(tempFire.gameObject);
         Destroy(this.gameObject);
     }
 
