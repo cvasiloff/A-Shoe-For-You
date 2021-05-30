@@ -34,14 +34,19 @@ public class Customer : Entity
         Destroy(this.transform.GetChild(0).gameObject);
         yield return new WaitForSeconds(1);
         gm.CallPolice();
+        if(this != null)
         Destroy(this.gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag != "Floor")
+        if(collision.gameObject.tag != "Floor" && collision.gameObject.tag != "Booth" && collision.gameObject.tag != "Package")
         {
             BeginDeath();
+        }
+        else if(collision.gameObject.tag == "Booth")
+        {
+            Destroy(this.gameObject);
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PhoneBooth : MonoBehaviour
 {
     public GameObject CustomerPrefab;
+    public bool canSpawn = true;
     // Start is called before the first frame update
 
     void Start()
