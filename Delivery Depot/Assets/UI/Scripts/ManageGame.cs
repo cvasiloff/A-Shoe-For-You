@@ -116,7 +116,6 @@ public class ManageGame : MonoBehaviour
 
     public float DistCheck(Vector3 playerPos, Vector3 stationPos)
     {
-        float temp;
         return (Mathf.Abs((playerPos - stationPos).magnitude));
     }
 

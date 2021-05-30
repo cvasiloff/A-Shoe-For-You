@@ -12,7 +12,7 @@ public class Police : Entity
     bool updateChase = true;
 
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
         myCop = this.GetComponent<NavMeshAgent>();

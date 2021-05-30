@@ -9,6 +9,7 @@ TagManager:
   - Package
   - Spawn
   - Station
+  - Booth
   layers:
   - Default
   - TransparentFX

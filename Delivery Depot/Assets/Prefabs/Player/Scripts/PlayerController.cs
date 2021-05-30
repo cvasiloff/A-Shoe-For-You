@@ -28,7 +28,7 @@ public class PlayerController : Entity
     public bool finishBar;
     public bool brakeBar;
 
-    void Start()
+    new void Start()
     {
         base.Start();
         myCam = Camera.main;

@@ -7,7 +7,7 @@ public class Package : PhysicsObject
     Customer[] customers;
     bool notDead = true;
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
         StartCoroutine(DespawnPackage(3));

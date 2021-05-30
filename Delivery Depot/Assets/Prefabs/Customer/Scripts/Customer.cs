@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Customer : Entity
 {
+    public bool inMotion;
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
     }
@@ -13,7 +14,10 @@ public class Customer : Entity
     // Update is called once per frame
     void Update()
     {
-        
+        if(inMotion && !death)
+        {
+            myRig.velocity = this.transform.forward * 5;
+        }
     }
 
     public void BeginDeath()
@@ -31,5 +35,13 @@ public class Customer : Entity
         yield return new WaitForSeconds(1);
         gm.CallPolice();
         Destroy(this.gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag != "Floor")
+        {
+            BeginDeath();
+        }
     }
 }

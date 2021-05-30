@@ -6,7 +6,7 @@ public class Entity : PhysicsObject
 {
     public bool death;
     
-    public void Start()
+    new public void Start()
     {
         base.Start();
         
