@@ -9,6 +9,7 @@ public class Police : Entity
     PlayerController player;
     NavMeshAgent myCop;
     bool escape;
+    bool updateChase = true;
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +18,26 @@ public class Police : Entity
         myCop = this.GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerController>();
 
+        GameObject[] stations = GameObject.FindGameObjectsWithTag("Station");
+
+        for(int i = 0; i < stations.Length; i++)
+        {
+            Physics.IgnoreCollision(stations[i].GetComponent<Collider>(), this.GetComponent<Collider>());
+        }
+        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if(updateChase)
+        {
+            updateChase = false;
+            StartCoroutine(ChaseCooldown());
+            Move();
+        }
+        
         
         if(death && !escape)
         {
@@ -31,9 +46,15 @@ public class Police : Entity
         }
     }
 
+    IEnumerator ChaseCooldown()
+    {
+        yield return new WaitForSeconds(.1f);
+        updateChase = true;
+    }
+
     IEnumerator RemovePolice()
     {
-        gm.AddScore(100);
+        gm.AddScore(30);
         gm.CallPolice();
         this.transform.GetChild(0).gameObject.SetActive(true);
         yield return new WaitForSeconds(1);

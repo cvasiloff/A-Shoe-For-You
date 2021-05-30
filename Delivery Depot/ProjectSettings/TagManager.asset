@@ -8,6 +8,7 @@ TagManager:
   - Police
   - Package
   - Spawn
+  - Station
   layers:
   - Default
   - TransparentFX

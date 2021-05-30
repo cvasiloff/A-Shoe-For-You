@@ -32,6 +32,7 @@ public class ManageGame : MonoBehaviour
         StartCoroutine(BeginCountdown());
         player = FindObjectOfType<PlayerController>();
         policeSpawns = GameObject.FindGameObjectsWithTag("Spawn");
+
     }
 
     // Update is called once per frame
@@ -85,10 +86,38 @@ public class ManageGame : MonoBehaviour
 
     public void CallPolice()
     {
-        if(!player.death)
+        if (!player.death)
         {
-            GameObject cop = GameObject.Instantiate(policePrefab, policeSpawns[Random.Range(0, policeSpawns.Length)].transform.position, Quaternion.identity);
+            int station = FindStation();
+            
+            GameObject.Instantiate(policePrefab, policeSpawns[station].transform.position, Quaternion.identity);
         }
+        
+    }
+
+    public int FindStation()
+    {
+        float temp = 0;
+        int station = 0;
+
+        for(int i = 0; i < policeSpawns.Length; i++)
+        {
+            float dist = DistCheck(player.transform.position, policeSpawns[i].transform.position);
+
+            if(i == 0 || dist <= temp)
+            {
+                temp = dist;
+                station = i;
+            }
+        }
+
+        return station;
+    }
+
+    public float DistCheck(Vector3 playerPos, Vector3 stationPos)
+    {
+        float temp;
+        return (Mathf.Abs((playerPos - stationPos).magnitude));
     }
 
     public IEnumerator AliveScore()
