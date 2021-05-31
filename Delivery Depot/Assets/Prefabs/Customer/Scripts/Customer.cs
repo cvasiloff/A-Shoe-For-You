@@ -28,6 +28,7 @@ public class Customer : Entity
     {
         if(!hasDied)
         {
+            this.GetComponent<AudioSource>().Play();
             hasDied = true;
             StartCoroutine(RemoveCustomer());
             myRig.constraints = RigidbodyConstraints.None;

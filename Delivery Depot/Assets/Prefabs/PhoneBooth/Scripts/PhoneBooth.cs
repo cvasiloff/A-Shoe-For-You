@@ -13,7 +13,8 @@ public class PhoneBooth : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
-        StartCoroutine(SpawnCooldown());
+        if(canSpawn)
+            StartCoroutine(SpawnCooldown());
     }
 
     // Update is called once per frame
@@ -24,9 +25,8 @@ public class PhoneBooth : MonoBehaviour
 
     IEnumerator SpawnCooldown()
     {
-        yield return new WaitForSeconds(5);
-        Debug.Log("Spawning Customer");
         SpawnCustomer();
+        yield return new WaitForSeconds(5);
         if(!player.death)
             StartCoroutine(SpawnCooldown());
     }

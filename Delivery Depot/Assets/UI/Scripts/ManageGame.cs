@@ -64,6 +64,13 @@ public class ManageGame : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ExitLevel()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
+
     public void PauseGame()
     {
         isPaused = !isPaused;

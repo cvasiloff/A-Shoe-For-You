@@ -14,6 +14,8 @@ public class Police : Entity
     bool escape;
     bool updateChase = true;
     ParticleSystem tempFire;
+    bool soundOn = true;
+
 
     // Start is called before the first frame update
     new void Start()
@@ -22,7 +24,23 @@ public class Police : Entity
         myCop = this.GetComponent<NavMeshAgent>();
         player = FindObjectOfType<PlayerController>();
 
-        GameObject[] stations = GameObject.FindGameObjectsWithTag("Station");
+        GameObject[] stations = GameObject.FindGameObjectsWithTag("Spawn");
+        Police[] police = GameObject.FindObjectsOfType<Police>();
+
+        int temp = 0;
+        foreach(Police p in police)
+        {
+            if(p.soundOn)
+            {
+                temp++;
+            }
+        }
+
+        if(temp > 5)
+        {
+            soundOn = false;
+            this.GetComponent<AudioSource>().Stop();
+        }
 
         for(int i = 0; i < stations.Length; i++)
         {
@@ -45,8 +63,8 @@ public class Police : Entity
         
         if(death && !escape)
         {
-            this.GetComponent<AudioSource>().clip = audioClips[0];
-            this.GetComponent<AudioSource>().Play();
+            this.GetComponent<AudioSource>().Stop();
+            this.GetComponent<AudioSource>().PlayOneShot(audioClips[0],1);
             tempFire = Instantiate(fire, this.transform.position + new Vector3(0, .5f, 0), Quaternion.Euler(this.transform.eulerAngles + new Vector3(-90, 0, 0)));
             StartCoroutine(RemovePolice());
             escape = true;
@@ -86,6 +104,11 @@ public class Police : Entity
         {
             myCop.destination = this.transform.position;
             myCop.isStopped = true;
+        }
+
+        if(player.death)
+        {
+            this.GetComponent<AudioSource>().Stop();
         }
     }
 }
