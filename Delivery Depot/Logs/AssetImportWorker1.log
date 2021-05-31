@@ -960,3 +960,43 @@ Received Import Request.
 Start importing Assets/Audio/SFX.mixer using Guid(22367b308f702504abbc8c6675160fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8561e0a93e19541389da73fd3a0a4c02') in 0.026438 seconds
   Import took 0.028586 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002946 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.754 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1396 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.7 MB.
+System memory in use after: 69.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1950.
+Total: 1.636200 ms (FindLiveObjects: 0.138500 ms CreateObjectMapping: 0.039400 ms MarkObjects: 1.408700 ms  DeleteObjects: 0.048600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.756787 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(92037ee48aa830143b9ef9aca963e796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(92037ee48aa830143b9ef9aca963e796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d57c7651215b45d2d01fb62e328c737') in 0.010449 seconds
+  Import took 0.012645 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 2.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 41.9 MB.
+System memory in use after: 41.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 1950.
+Total: 1.827700 ms (FindLiveObjects: 0.151000 ms CreateObjectMapping: 0.029600 ms MarkObjects: 1.609400 ms  DeleteObjects: 0.037100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
