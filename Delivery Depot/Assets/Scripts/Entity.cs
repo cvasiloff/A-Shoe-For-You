@@ -5,8 +5,8 @@ using UnityEngine;
 public class Entity : PhysicsObject
 {
     [Header("Entity Variables")]
-    
     public bool death;
+    public AudioClip[] audioClips;
     
     new public void Start()
     {

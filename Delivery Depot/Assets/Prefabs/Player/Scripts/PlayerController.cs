@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerController : Entity
 {
@@ -25,6 +26,7 @@ public class PlayerController : Entity
 
     public float progress;
     private bool tallyScore;
+    private bool swapBrakes = true;
 
 
     public bool finishBar;
@@ -47,6 +49,9 @@ public class PlayerController : Entity
         
         else if(death && !tallyScore)
         {
+            this.GetComponent<AudioSource>().Stop();
+            this.GetComponent<AudioSource>().PlayOneShot(audioClips[3],1);
+            
             tempFire = Instantiate(fire, this.transform.position + new Vector3(0,.5f,0), Quaternion.Euler(this.transform.eulerAngles + new Vector3(-90,0,0)));
             tallyScore = true;
             StartCoroutine(EndGame());
@@ -74,6 +79,7 @@ public class PlayerController : Entity
 
     public override void Move()
     {
+        
         float turn = Input.GetAxisRaw("Horizontal");
         float move = Input.GetAxisRaw("Vertical");
 
@@ -88,6 +94,12 @@ public class PlayerController : Entity
 
         if(Input.GetAxisRaw("Fire2") != 0 && !gm.isPaused)
         {
+            if(swapBrakes)
+            {
+                this.GetComponent<AudioSource>().clip = audioClips[2];
+                this.GetComponent<AudioSource>().Play();
+                swapBrakes = false;
+            }
             slowTime = 0.5f;
             brakeTimer -= Time.deltaTime * 1.5f;
 
@@ -99,12 +111,18 @@ public class PlayerController : Entity
 
             if (brakeTimer <= 0)
             {
+                this.GetComponent<AudioSource>().Stop();
                 Debug.Log("Brakes Failed!");
                 Die();
             }
         }
         else
         {
+            if(!swapBrakes)
+            {
+                this.GetComponent<AudioSource>().Stop();
+                swapBrakes = true;
+            }
             if(brakeTimer < brakeTime)
             {
                 this.transform.GetChild(1).gameObject.SetActive(false);
@@ -120,7 +138,7 @@ public class PlayerController : Entity
             
             if(canSpawnPackage)
             {
-                
+                this.GetComponent<AudioSource>().PlayOneShot(audioClips[0], 1);
                 canSpawnPackage = false;
                 SpawnPackage();
             }

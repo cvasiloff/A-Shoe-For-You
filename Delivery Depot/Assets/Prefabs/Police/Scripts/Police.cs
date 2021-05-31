@@ -45,6 +45,8 @@ public class Police : Entity
         
         if(death && !escape)
         {
+            this.GetComponent<AudioSource>().clip = audioClips[0];
+            this.GetComponent<AudioSource>().Play();
             tempFire = Instantiate(fire, this.transform.position + new Vector3(0, .5f, 0), Quaternion.Euler(this.transform.eulerAngles + new Vector3(-90, 0, 0)));
             StartCoroutine(RemovePolice());
             escape = true;
