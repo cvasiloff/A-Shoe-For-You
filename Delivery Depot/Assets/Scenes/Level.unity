@@ -23166,6 +23166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -34048,6 +34052,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4730691889061435547, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
 --- !u!1 &807356500
@@ -40088,6 +40096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -45264,6 +45276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -49219,6 +49235,10 @@ PrefabInstance:
     - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_Name
       value: RedCar (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
@@ -74931,6 +74951,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -84649,6 +84673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -88790,6 +88818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedCar (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -89424,6 +89456,10 @@ PrefabInstance:
     - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_Name
       value: RedCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972038367997823923, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3972038367997823935, guid: d996f5e1c10d7954c8c5cfec30701b6f, type: 3}
       propertyPath: m_RootOrder
